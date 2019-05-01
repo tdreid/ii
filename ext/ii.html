@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('./css/normalize.css');
+            @import url('./css/skeleton.css');
+            
+            body 
+            {
+                margin-top: 10em;
+            }
+
+            .ui__input
+            {
+                width: 100%;
+            }            
+        </style>
+    </head>
+    <body>
+        <div class="container">            
+            <div class="row">
+                <div class="one-third column">
+                    <img src="./img/gnp.png" />
+                </div>
+                <div class="one-third column">
+                    <input type="text" data-bind="textInput: entry, event: {keyup: onEnter} " class="ui__input" />
+                </div>
+                <div class="one-third column">
+                    <img src="./img/gnp.png" />
+                </div>
+            </div>
+            <div class="row">
+                    <div class="one-third column">
+                        <img src="./img/gnp.png" />
+                    </div>
+                    <div class="one-third column">
+                            <button data-bind="click: integrate" class="button-primary">Integrate!</button>
+                            <button data-bind="click: addInterest" class="u-pull-right">Add interest.</button>  
+                    </div>
+                    <div class="one-third column">
+                        <img src="./img/gnp.png" />
+                    </div>
+            </div>          
+            <div class="row">
+                <div class="one-third column">
+                        <img src="./img/gnp.png" />
+                    </div>
+                    <div class="one-third column">
+                        <ul data-bind="foreach: interests, visible: interests().length > 0">
+                            <li>
+                                <span data-bind="text: $data"></span>
+                                <a href="#" data-bind="click: $parent.removeInterest">x</a>
+                            </li> 
+                        </ul>                                
+                    </div>
+                    <div class="one-third column">
+                        <img src="./img/gnp.png" />
+                </div>
+            </div>       
+        </div>
+        <script src="./js/knockout-3.5.0.js"></script>
+        <script src="./js/knockout-secure-binding.min.js"></script>
+        <script src="ii.min.js"></script>
+    </body>
+</html>
