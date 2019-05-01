@@ -1,0 +1,21 @@
+{
+  "name": "interest-integrator",
+  "version": "0.1.0",
+  "description": "A Chrome browser extension to help you integrate your interests",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/ii.js -t [babelify --presets [ @babel/preset-env minify ] ] -o ext/ii.min.js",
+    "build-debug": "browserify src/ii.js -t [babelify --presets [ @babel/preset-env ] ] -o ext/ii.min.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-preset-minify": "^0.5.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "lodash": "^4.17.11"
+  },
+  "dependencies": {}
+}
