@@ -1,5 +1,5 @@
 # Interest Integrator
-A Chrome extension to help you discover how your interests intersect in inumerable iterations.
+A Chrome extension to help you discover how your interests intersect in inumerable iterations. Inspired by Hack #14 from the book *[Mindhacker](https://www.oreilly.com/library/view/mindhacker-60-tips/9781118166437/)* by Marty and Ron Hale-Evans. 
 
 ## Build
 1. This repo includes the unpacked extension.  You should not need to build 
