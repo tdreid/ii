@@ -8,7 +8,7 @@
         "scripts": ["background.js"]
       },
       "browser_action": {
-        "default_title": "Integrate interests."
+        "default_title": "Integrate interests"
       },
       "permissions": [
         "storage"
